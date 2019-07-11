@@ -1,7 +1,6 @@
 // the number of the LED pin
 const int ledPin = ;  
 const int ledPin1 = ;
-const int ledPin2 = ;
 // setting PWM properties
 const int freq = 5000;
 const int ledChannel = 0;
@@ -14,7 +13,6 @@ void setup(){
   // attach the channel to the GPIO to be controlled
   ledcAttachPin(ledPin, ledChannel);
   ledcAttachPin(ledPin1, ledChannel);
-  ledcAttachPin(ledPin2, ledChannel);
 }
  
 void loop(){
