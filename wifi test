@@ -1,0 +1,12 @@
+#include <WiFi.h>
+const char* ssid     = "esp32";
+const char* password = "12345678";
+
+void setup(){
+ // WiFi.begin(ssid, password);
+ WiFi.softAP(ssid, password);
+}
+// Serial.println(WiFi.localIP());
+ void loop(){  
+    Serial.println(WiFi.softAPIP());
+}    
