@@ -1,6 +1,6 @@
 #include <WiFi.h>
-const char* ssid     = "esp32";
-const char* password = "12345678";
+const char* ssid     = "";
+const char* password = "";
 
 void setup(){
  // WiFi.begin(ssid, password);
