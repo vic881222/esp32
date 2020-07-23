@@ -1,0 +1,14 @@
+int VWR = 0;
+int led_pin = 14;
+
+void setup() {
+  Serial.begin(115200);
+
+}
+
+void loop() {
+  VWR = analogRead(led_pin);
+  Serial.println(VWR);
+  delay(500);
+
+}
