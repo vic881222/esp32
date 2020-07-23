@@ -1,6 +1,6 @@
-int VWR = 0;
+double VWR = 0;
 int led_pin = 14;
-
+double resistance = 0;
 void setup() {
   Serial.begin(115200);
 
@@ -8,7 +8,8 @@ void setup() {
 
 void loop() {
   VWR = analogRead(led_pin);
-  Serial.println(VWR);
+  resistance = VWR * 50000/4095;
+  Serial.println(resistance);
   delay(500);
 
 }
